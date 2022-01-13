@@ -1,0 +1,623 @@
+\hypertarget{yams___cleo___martin-_colleu__2_80_8c}{}\section{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.0.c File Reference}
+\label{yams___cleo___martin-_colleu__2_80_8c}\index{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c@{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c}}
+
+
+Jeu de yams dans le terminal (il marche)  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{yams___cleo___martin-_colleu__2_80_8c_a302a25012afc693e315d5938afb5d178}\label{yams___cleo___martin-_colleu__2_80_8c_a302a25012afc693e315d5938afb5d178}} 
+\#define {\bfseries F\+U\+L\+L\+\_\+\+H\+O\+U\+SE}~25
+\item 
+\mbox{\Hypertarget{yams___cleo___martin-_colleu__2_80_8c_a26d66882e1b8b7a22634b3018291231c}\label{yams___cleo___martin-_colleu__2_80_8c_a26d66882e1b8b7a22634b3018291231c}} 
+\#define {\bfseries P\+E\+T\+I\+T\+E\+\_\+\+S\+U\+I\+TE}~30
+\item 
+\mbox{\Hypertarget{yams___cleo___martin-_colleu__2_80_8c_a701438589b186e356be68e5c9b858834}\label{yams___cleo___martin-_colleu__2_80_8c_a701438589b186e356be68e5c9b858834}} 
+\#define {\bfseries G\+R\+A\+N\+D\+E\+\_\+\+S\+U\+I\+TE}~40
+\item 
+\mbox{\Hypertarget{yams___cleo___martin-_colleu__2_80_8c_a29998f139d7e8cfcbe68676cf31a60f5}\label{yams___cleo___martin-_colleu__2_80_8c_a29998f139d7e8cfcbe68676cf31a60f5}} 
+\#define {\bfseries Y\+A\+MS}~50
+\item 
+\mbox{\Hypertarget{yams___cleo___martin-_colleu__2_80_8c_a5bd93bba7ef97962aa758df67bb926e8}\label{yams___cleo___martin-_colleu__2_80_8c_a5bd93bba7ef97962aa758df67bb926e8}} 
+\#define {\bfseries S\+C\+O\+R\+E\+\_\+\+M\+I\+N\+\_\+\+B\+O\+N\+US}~62
+\item 
+\mbox{\Hypertarget{yams___cleo___martin-_colleu__2_80_8c_a96a9822fa134450197dd454b1478a193}\label{yams___cleo___martin-_colleu__2_80_8c_a96a9822fa134450197dd454b1478a193}} 
+\#define {\bfseries B\+O\+N\+US}~35
+\item 
+\mbox{\Hypertarget{yams___cleo___martin-_colleu__2_80_8c_a1cc9e37c151f4dd831c34575696aa57d}\label{yams___cleo___martin-_colleu__2_80_8c_a1cc9e37c151f4dd831c34575696aa57d}} 
+\#define {\bfseries N\+B\+\_\+\+DE}~5
+\item 
+\mbox{\Hypertarget{yams___cleo___martin-_colleu__2_80_8c_a6549522dc97ddb177422115c870f88c5}\label{yams___cleo___martin-_colleu__2_80_8c_a6549522dc97ddb177422115c870f88c5}} 
+\#define {\bfseries N\+B\+\_\+\+J\+O\+U\+E\+UR}~2
+\item 
+\mbox{\Hypertarget{yams___cleo___martin-_colleu__2_80_8c_ac2e833c09f9be68030265e44573b8551}\label{yams___cleo___martin-_colleu__2_80_8c_ac2e833c09f9be68030265e44573b8551}} 
+\#define {\bfseries N\+B\+\_\+\+C\+A\+SE}~17
+\item 
+\mbox{\Hypertarget{yams___cleo___martin-_colleu__2_80_8c_a967232a261ff7f17c1010e6fc27270a0}\label{yams___cleo___martin-_colleu__2_80_8c_a967232a261ff7f17c1010e6fc27270a0}} 
+\#define {\bfseries T\+A\+I\+L\+L\+E\+\_\+\+N\+OM}~9
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{yams___cleo___martin-_colleu__2_80_8c_aa30d701a6cf40e0513a3b9522e2ad855}\label{yams___cleo___martin-_colleu__2_80_8c_aa30d701a6cf40e0513a3b9522e2ad855}} 
+typedef int {\bfseries type\+\_\+de}\mbox{[}2\mbox{]}\mbox{[}N\+B\+\_\+\+DE\mbox{]}
+\item 
+\mbox{\Hypertarget{yams___cleo___martin-_colleu__2_80_8c_aa0d650ad4889c607a2ad887872ff57b4}\label{yams___cleo___martin-_colleu__2_80_8c_aa0d650ad4889c607a2ad887872ff57b4}} 
+typedef int {\bfseries type\+\_\+score}\mbox{[}N\+B\+\_\+\+J\+O\+U\+E\+UR\mbox{]}\mbox{[}N\+B\+\_\+\+C\+A\+SE\mbox{]}
+\item 
+\mbox{\Hypertarget{yams___cleo___martin-_colleu__2_80_8c_a6f9df657e03fde4bd39a4d4f7901cd06}\label{yams___cleo___martin-_colleu__2_80_8c_a6f9df657e03fde4bd39a4d4f7901cd06}} 
+typedef char {\bfseries nom}\mbox{[}T\+A\+I\+L\+L\+E\+\_\+\+N\+OM+1\mbox{]}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{yams___cleo___martin-_colleu__2_80_8c_acade0b64e6667900df67784719f6d91b}{f\+\_\+total}} (int table\mbox{[}7\mbox{]}, int debut, int fin)
+\begin{DoxyCompactList}\small\item\em calcule la somme des valeur d\textquotesingle{}un tableau compris entre un indice de début et un indice de fin donné \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{yams___cleo___martin-_colleu__2_80_8c_a5bbcd4c6c5a2425d5de6877bdfcf7b55}{majuscule}} (char $\ast$chaine)
+\begin{DoxyCompactList}\small\item\em remplace les minuscules d\textquotesingle{}une chaine par des majuscules \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{yams___cleo___martin-_colleu__2_80_8c_ae0d4fb89370e27251e605e929c9af0bf}{case\+\_\+int}} (int nb)
+\begin{DoxyCompactList}\small\item\em adapte la taille de case d\textquotesingle{}un tableau à l\textquotesingle{}entier donné et l\textquotesingle{}affiche (si nb = 0 alors affiche un X dans la case) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{yams___cleo___martin-_colleu__2_80_8c_ad2143ef8ea16cfc017c7f006af3385cb}{case\+\_\+int\+\_\+total}} (int nb)
+\begin{DoxyCompactList}\small\item\em adapte la taille de case d\textquotesingle{}un tableau à l\textquotesingle{}entier donné et l\textquotesingle{}affiche (pour les totaux, n\textquotesingle{}affiche pas de X contrairement à case\+\_\+int) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{yams___cleo___martin-_colleu__2_80_8c_a7cfeb8762d6de0ebff12f95682f49806}{case\+\_\+str}} (char chaine\mbox{[}10\mbox{]}, int taille\+\_\+case)
+\begin{DoxyCompactList}\small\item\em adapte le nombre d\textquotesingle{}espace d\textquotesingle{}une case selon la taille de la chaine donnée et la taille de la case prévue \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{yams___cleo___martin-_colleu__2_80_8c_ae8b366432ca1376ab9fd71104cf988e4}{ligne1}} (nom j1, nom j2)
+\begin{DoxyCompactList}\small\item\em affiche la première ligne du tableau en y entrant le nom des joueurs \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{yams___cleo___martin-_colleu__2_80_8c_a7566741f40c636a12c1446addc70a13b}{ligne\+\_\+global}} (char chaine\mbox{[}20\mbox{]}, int nb1, int nb2)
+\begin{DoxyCompactList}\small\item\em affiche la plupart des autres lignes du tableau selon les parametres donnés (texte de la case 1, score du j1, score du j2) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{yams___cleo___martin-_colleu__2_80_8c_a95b368ec8ea7cec19093abf65cfb438c}{ligne\+\_\+total}} (char chaine\mbox{[}20\mbox{]}, int nb1, int nb2)
+\begin{DoxyCompactList}\small\item\em affiche la plupart des autres lignes du tableau selon les parametres donnés (texte de la case 1, score du j1, score du j2) pour afficher les totaux, car appel case\+\_\+total\+\_\+int()) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{yams___cleo___martin-_colleu__2_80_8c_ab416e0541f1d6204aed0b40c78def20b}\label{yams___cleo___martin-_colleu__2_80_8c_ab416e0541f1d6204aed0b40c78def20b}} 
+void \mbox{\hyperlink{yams___cleo___martin-_colleu__2_80_8c_ab416e0541f1d6204aed0b40c78def20b}{separateur}} ()
+\begin{DoxyCompactList}\small\item\em affiche une ligne de séparation \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{yams___cleo___martin-_colleu__2_80_8c_a1d1c5c29ca6650e0c9995d76c80a1cb5}{tableau}} (type\+\_\+score score, nom j1, nom j2, int j\+\_\+actif, type\+\_\+score possibilitees)
+\begin{DoxyCompactList}\small\item\em affiche le tableau des scores \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{yams___cleo___martin-_colleu__2_80_8c_a9f85afcdbd64730f976350802b5139de}{de\+\_\+random}} ()
+\begin{DoxyCompactList}\small\item\em fonction qui retourne une valeur aléatoire comprise entre 0 et 6 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{yams___cleo___martin-_colleu__2_80_8c_a8da1d298788f0d42c2755d2aef014b6f}{lancer\+\_\+de}} (type\+\_\+de de)
+\begin{DoxyCompactList}\small\item\em modifie la valeur des dés (de\mbox{[}0\mbox{]}) si leur opposé (de\mbox{[}1\mbox{]}) = 1 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{yams___cleo___martin-_colleu__2_80_8c_ae2a93c2991c556e62762ba0d81d483f0}{valider\+\_\+points}} (int de\mbox{[}N\+B\+\_\+\+DE\mbox{]}, int score\mbox{[}N\+B\+\_\+\+C\+A\+SE\mbox{]})
+\begin{DoxyCompactList}\small\item\em permet de verifier l\textquotesingle{}entrée de l\textquotesingle{}utilisateur \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{yams___cleo___martin-_colleu__2_80_8c_acdf5442484ebac64baffd975bb117bf8}{choix\+\_\+de}} (type\+\_\+de de)
+\begin{DoxyCompactList}\small\item\em permet de choisir quels dés relancé en rentrant une chaine ce caractere si le dé n\textquotesingle{}est pas relancé \+: de\mbox{[}1\mbox{]}\mbox{[}indice du dé\mbox{]} = 0 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{yams___cleo___martin-_colleu__2_80_8c_a546ce9e2b826a940aa39b86be0ed9a54}{menu}} (type\+\_\+de de, type\+\_\+score score, int $\ast$nb\+\_\+lancer, int joueur\+\_\+actif, nom nom\+\_\+joueur\+\_\+actif, int $\ast$fin)
+\begin{DoxyCompactList}\small\item\em affiche le menu (score des dés, chois des possibilités) selon le nombre de lancés restant et fait appel à d\textquotesingle{}autres fonction pour \+: choisir les dé, relancer les dés, valider ses points \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{yams___cleo___martin-_colleu__2_80_8c_a438a5164d4aac732138ced5899be0379}{total\+\_\+nombre}} (int de\mbox{[}N\+B\+\_\+\+DE\mbox{]}, int nombre)
+\begin{DoxyCompactList}\small\item\em (pas fini) recherche le nombre de repetiontion d\textquotesingle{}un nombre donné dans une liste et retourne (nombre de repetition du nombre)$\ast$(le nombre) \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{yams___cleo___martin-_colleu__2_80_8c_a3005d90aed29a3c80ba5db99069cfd83}{brelan}} (int de\mbox{[}N\+B\+\_\+\+DE\mbox{]})
+\begin{DoxyCompactList}\small\item\em (pas fini) cherche la presence d\textquotesingle{}un brelan dans le tableau donné et retourne 3$\ast$(nombre le plus present dans le tableau) si brelan il y a, 0 sinon \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{yams___cleo___martin-_colleu__2_80_8c_ab1e379715ffd22122d1dcb633f7737c5}{carre}} (int de\mbox{[}N\+B\+\_\+\+DE\mbox{]})
+\begin{DoxyCompactList}\small\item\em (pas fini) cherche la presence d\textquotesingle{}un carre dans le tableau donné et retourne 4$\ast$(nombre le plus present dans le tableau) si carre il y a, 0 sinon \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{yams___cleo___martin-_colleu__2_80_8c_ad33944b5dfb392f102875d134e42188f}{full\+\_\+house}} (int de\mbox{[}N\+B\+\_\+\+DE\mbox{]})
+\begin{DoxyCompactList}\small\item\em (pas fini) cherche la presence d\textquotesingle{}un full house et retourne F\+U\+L\+L\+\_\+\+H\+O\+U\+SE s\textquotesingle{}il y en a 1, 0 sinon. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{yams___cleo___martin-_colleu__2_80_8c_a7a5a0a035a8765dfa6098b342b6dfc78}{petite\+\_\+suite}} (int de\mbox{[}N\+B\+\_\+\+DE\mbox{]})
+\begin{DoxyCompactList}\small\item\em tri la liste des dés pour y rechercher une petite suite \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{yams___cleo___martin-_colleu__2_80_8c_a9a910d2cb5db9b8ad5d270e9a93dcd5f}{grande\+\_\+suite}} (int de\mbox{[}N\+B\+\_\+\+DE\mbox{]})
+\begin{DoxyCompactList}\small\item\em tri la liste des dés pour y rechercher une grande suite \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{yams___cleo___martin-_colleu__2_80_8c_ab9d432a650d9fe11c52fdac9aeb8847e}{yams}} (int de\mbox{[}N\+B\+\_\+\+DE\mbox{]})
+\begin{DoxyCompactList}\small\item\em recherche la présence d\textquotesingle{}un yams (5 dés identiques) dans la liste des dés \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{yams___cleo___martin-_colleu__2_80_8c_ab6c13f2b7be7ec56df645329e87c6929}{chance}} (int de\mbox{[}N\+B\+\_\+\+DE\mbox{]})
+\begin{DoxyCompactList}\small\item\em retourne le total des valeurs de la liste des dés \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{yams___cleo___martin-_colleu__2_80_8c_a1229fccbb203e81f1130f89c0a68683f}{verif\+\_\+nom}} (nom joueur, int j)
+\begin{DoxyCompactList}\small\item\em permet de rentrer et de verifier une chaine de caractère pour qu\textquotesingle{}elle fasse au maximum 10 caractere, et que chaque caractère appartient à la table A\+S\+C\+II. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{yams___cleo___martin-_colleu__2_80_8c_aca54a84a82c247dc378a6396bbe2fbc1}{afficher\+\_\+de}} (char nom, int de)
+\begin{DoxyCompactList}\small\item\em affiche un dés sous forme d\textquotesingle{}un affichage spécial, en y indiquant le nom du dé et sa valeur \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{yams___cleo___martin-_colleu__2_80_8c_a187b6be1bce27cb32c9a632b7411394a}{tri}} (int res\mbox{[}N\+B\+\_\+\+DE\mbox{]})
+\begin{DoxyCompactList}\small\item\em tri la liste par ordre croissant \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{yams___cleo___martin-_colleu__2_80_8c_aa40182218f7ed8b1a8c5b6ecd9072790}{ligne\+\_\+possibilitees}} (char chaine\mbox{[}20\mbox{]}, int nb1, int nb2, int j\+\_\+actif)
+\begin{DoxyCompactList}\small\item\em affiche la plupart des autres lignes du tableau selon les parametres donnés (texte de la case 1, score du j1, score du j2) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{yams___cleo___martin-_colleu__2_80_8c_a8fa4cb922c93d507fe405d4d87926b92}\label{yams___cleo___martin-_colleu__2_80_8c_a8fa4cb922c93d507fe405d4d87926b92}} 
+void {\bfseries calcul\+\_\+possibilitees} (type\+\_\+score p, int de\mbox{[}N\+B\+\_\+\+DE\mbox{]}, int j\+\_\+actif)
+\item 
+void \mbox{\hyperlink{yams___cleo___martin-_colleu__2_80_8c_a792bcf389a25e2758894847d2feca6db}{initialise}} (type\+\_\+de de)
+\begin{DoxyCompactList}\small\item\em met chaque valeur du tableau de\mbox{[}1\mbox{]} à 1, pour que par la suite, tous les déés pouissent êtres relancés \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{yams___cleo___martin-_colleu__2_80_8c_ab36b94e49cc3f74dbd2642e61b98b966}\label{yams___cleo___martin-_colleu__2_80_8c_ab36b94e49cc3f74dbd2642e61b98b966}} 
+int {\bfseries recherche\+\_\+nb} (int chaine\mbox{[}N\+B\+\_\+\+DE\mbox{]}, int indice\+\_\+debut, int nb)
+\item 
+\mbox{\Hypertarget{yams___cleo___martin-_colleu__2_80_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{yams___cleo___martin-_colleu__2_80_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+int {\bfseries main} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{yams___cleo___martin-_colleu__2_80_8c_aee98ad0feca70f669afd32300bb66f65}\label{yams___cleo___martin-_colleu__2_80_8c_aee98ad0feca70f669afd32300bb66f65}} 
+const int {\bfseries M\+A\+X\+\_\+\+L\+A\+N\+C\+ER} = 3
+\item 
+\mbox{\Hypertarget{yams___cleo___martin-_colleu__2_80_8c_a71e22abe29ad94a56fa7bfaa9c53a7d0}\label{yams___cleo___martin-_colleu__2_80_8c_a71e22abe29ad94a56fa7bfaa9c53a7d0}} 
+const int {\bfseries M\+A\+X\+\_\+\+T\+O\+U\+RS} = 26
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Jeu de yams dans le terminal (il marche) 
+
+\begin{DoxyAuthor}{Author}
+Cléo Martin-\/\+Colleu 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+2.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2021-\/11-\/20 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{yams___cleo___martin-_colleu__2_80_8c_aca54a84a82c247dc378a6396bbe2fbc1}\label{yams___cleo___martin-_colleu__2_80_8c_aca54a84a82c247dc378a6396bbe2fbc1}} 
+\index{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c@{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c}!afficher\+\_\+de@{afficher\+\_\+de}}
+\index{afficher\+\_\+de@{afficher\+\_\+de}!yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c@{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c}}
+\subsubsection{\texorpdfstring{afficher\+\_\+de()}{afficher\_de()}}
+{\footnotesize\ttfamily void afficher\+\_\+de (\begin{DoxyParamCaption}\item[{char}]{nom,  }\item[{int}]{de }\end{DoxyParamCaption})}
+
+
+
+affiche un dés sous forme d\textquotesingle{}un affichage spécial, en y indiquant le nom du dé et sa valeur 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nom,char,entrée} & \\
+\hline
+{\em de,int,entrée} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{yams___cleo___martin-_colleu__2_80_8c_a3005d90aed29a3c80ba5db99069cfd83}\label{yams___cleo___martin-_colleu__2_80_8c_a3005d90aed29a3c80ba5db99069cfd83}} 
+\index{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c@{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c}!brelan@{brelan}}
+\index{brelan@{brelan}!yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c@{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c}}
+\subsubsection{\texorpdfstring{brelan()}{brelan()}}
+{\footnotesize\ttfamily int brelan (\begin{DoxyParamCaption}\item[{int}]{de\mbox{[}\+N\+B\+\_\+\+D\+E\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+(pas fini) cherche la presence d\textquotesingle{}un brelan dans le tableau donné et retourne 3$\ast$(nombre le plus present dans le tableau) si brelan il y a, 0 sinon 
+
+
+\begin{DoxyParams}{Parameters}
+{\em de,int\mbox{[}\+N\+B\+\_\+\+D\+E\mbox{]},entrée} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{yams___cleo___martin-_colleu__2_80_8c_ab1e379715ffd22122d1dcb633f7737c5}\label{yams___cleo___martin-_colleu__2_80_8c_ab1e379715ffd22122d1dcb633f7737c5}} 
+\index{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c@{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c}!carre@{carre}}
+\index{carre@{carre}!yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c@{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c}}
+\subsubsection{\texorpdfstring{carre()}{carre()}}
+{\footnotesize\ttfamily int carre (\begin{DoxyParamCaption}\item[{int}]{de\mbox{[}\+N\+B\+\_\+\+D\+E\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+(pas fini) cherche la presence d\textquotesingle{}un carre dans le tableau donné et retourne 4$\ast$(nombre le plus present dans le tableau) si carre il y a, 0 sinon 
+
+
+\begin{DoxyParams}{Parameters}
+{\em de,int\mbox{[}\+N\+B\+\_\+\+D\+E\mbox{]},entrée} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{yams___cleo___martin-_colleu__2_80_8c_ae0d4fb89370e27251e605e929c9af0bf}\label{yams___cleo___martin-_colleu__2_80_8c_ae0d4fb89370e27251e605e929c9af0bf}} 
+\index{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c@{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c}!case\+\_\+int@{case\+\_\+int}}
+\index{case\+\_\+int@{case\+\_\+int}!yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c@{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c}}
+\subsubsection{\texorpdfstring{case\+\_\+int()}{case\_int()}}
+{\footnotesize\ttfamily void case\+\_\+int (\begin{DoxyParamCaption}\item[{int}]{nb }\end{DoxyParamCaption})}
+
+
+
+adapte la taille de case d\textquotesingle{}un tableau à l\textquotesingle{}entier donné et l\textquotesingle{}affiche (si nb = 0 alors affiche un X dans la case) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nb,int,entrée} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{yams___cleo___martin-_colleu__2_80_8c_ad2143ef8ea16cfc017c7f006af3385cb}\label{yams___cleo___martin-_colleu__2_80_8c_ad2143ef8ea16cfc017c7f006af3385cb}} 
+\index{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c@{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c}!case\+\_\+int\+\_\+total@{case\+\_\+int\+\_\+total}}
+\index{case\+\_\+int\+\_\+total@{case\+\_\+int\+\_\+total}!yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c@{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c}}
+\subsubsection{\texorpdfstring{case\+\_\+int\+\_\+total()}{case\_int\_total()}}
+{\footnotesize\ttfamily void case\+\_\+int\+\_\+total (\begin{DoxyParamCaption}\item[{int}]{nb }\end{DoxyParamCaption})}
+
+
+
+adapte la taille de case d\textquotesingle{}un tableau à l\textquotesingle{}entier donné et l\textquotesingle{}affiche (pour les totaux, n\textquotesingle{}affiche pas de X contrairement à case\+\_\+int) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nb} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{yams___cleo___martin-_colleu__2_80_8c_a7cfeb8762d6de0ebff12f95682f49806}\label{yams___cleo___martin-_colleu__2_80_8c_a7cfeb8762d6de0ebff12f95682f49806}} 
+\index{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c@{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c}!case\+\_\+str@{case\+\_\+str}}
+\index{case\+\_\+str@{case\+\_\+str}!yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c@{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c}}
+\subsubsection{\texorpdfstring{case\+\_\+str()}{case\_str()}}
+{\footnotesize\ttfamily void case\+\_\+str (\begin{DoxyParamCaption}\item[{char}]{chaine\mbox{[}10\mbox{]},  }\item[{int}]{taille\+\_\+case }\end{DoxyParamCaption})}
+
+
+
+adapte le nombre d\textquotesingle{}espace d\textquotesingle{}une case selon la taille de la chaine donnée et la taille de la case prévue 
+
+
+\begin{DoxyParams}{Parameters}
+{\em chaine,char\mbox{[}10\mbox{]},entrée} & \\
+\hline
+{\em taille\+\_\+case,int,entrée} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{yams___cleo___martin-_colleu__2_80_8c_ab6c13f2b7be7ec56df645329e87c6929}\label{yams___cleo___martin-_colleu__2_80_8c_ab6c13f2b7be7ec56df645329e87c6929}} 
+\index{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c@{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c}!chance@{chance}}
+\index{chance@{chance}!yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c@{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c}}
+\subsubsection{\texorpdfstring{chance()}{chance()}}
+{\footnotesize\ttfamily int chance (\begin{DoxyParamCaption}\item[{int}]{de\mbox{[}\+N\+B\+\_\+\+D\+E\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+retourne le total des valeurs de la liste des dés 
+
+
+\begin{DoxyParams}{Parameters}
+{\em de,int\mbox{[}\+N\+B\+\_\+\+D\+E\mbox{]},entrée} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{yams___cleo___martin-_colleu__2_80_8c_acdf5442484ebac64baffd975bb117bf8}\label{yams___cleo___martin-_colleu__2_80_8c_acdf5442484ebac64baffd975bb117bf8}} 
+\index{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c@{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c}!choix\+\_\+de@{choix\+\_\+de}}
+\index{choix\+\_\+de@{choix\+\_\+de}!yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c@{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c}}
+\subsubsection{\texorpdfstring{choix\+\_\+de()}{choix\_de()}}
+{\footnotesize\ttfamily void choix\+\_\+de (\begin{DoxyParamCaption}\item[{type\+\_\+de}]{de }\end{DoxyParamCaption})}
+
+
+
+permet de choisir quels dés relancé en rentrant une chaine ce caractere si le dé n\textquotesingle{}est pas relancé \+: de\mbox{[}1\mbox{]}\mbox{[}indice du dé\mbox{]} = 0 
+
+
+\begin{DoxyParams}{Parameters}
+{\em de,int\mbox{[}2\mbox{]}\mbox{[}5\mbox{]},entrée} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{yams___cleo___martin-_colleu__2_80_8c_a9f85afcdbd64730f976350802b5139de}\label{yams___cleo___martin-_colleu__2_80_8c_a9f85afcdbd64730f976350802b5139de}} 
+\index{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c@{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c}!de\+\_\+random@{de\+\_\+random}}
+\index{de\+\_\+random@{de\+\_\+random}!yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c@{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c}}
+\subsubsection{\texorpdfstring{de\+\_\+random()}{de\_random()}}
+{\footnotesize\ttfamily int de\+\_\+random (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+fonction qui retourne une valeur aléatoire comprise entre 0 et 6 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{yams___cleo___martin-_colleu__2_80_8c_acade0b64e6667900df67784719f6d91b}\label{yams___cleo___martin-_colleu__2_80_8c_acade0b64e6667900df67784719f6d91b}} 
+\index{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c@{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c}!f\+\_\+total@{f\+\_\+total}}
+\index{f\+\_\+total@{f\+\_\+total}!yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c@{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c}}
+\subsubsection{\texorpdfstring{f\+\_\+total()}{f\_total()}}
+{\footnotesize\ttfamily int f\+\_\+total (\begin{DoxyParamCaption}\item[{int}]{table\mbox{[}7\mbox{]},  }\item[{int}]{debut,  }\item[{int}]{fin }\end{DoxyParamCaption})}
+
+
+
+calcule la somme des valeur d\textquotesingle{}un tableau compris entre un indice de début et un indice de fin donné 
+
+
+\begin{DoxyParams}{Parameters}
+{\em table,int\mbox{[}7\mbox{]},entrée} & \\
+\hline
+{\em debut,int,entrée} & \\
+\hline
+{\em fin,int,entrée} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{yams___cleo___martin-_colleu__2_80_8c_ad33944b5dfb392f102875d134e42188f}\label{yams___cleo___martin-_colleu__2_80_8c_ad33944b5dfb392f102875d134e42188f}} 
+\index{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c@{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c}!full\+\_\+house@{full\+\_\+house}}
+\index{full\+\_\+house@{full\+\_\+house}!yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c@{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c}}
+\subsubsection{\texorpdfstring{full\+\_\+house()}{full\_house()}}
+{\footnotesize\ttfamily int full\+\_\+house (\begin{DoxyParamCaption}\item[{int}]{de\mbox{[}\+N\+B\+\_\+\+D\+E\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+(pas fini) cherche la presence d\textquotesingle{}un full house et retourne F\+U\+L\+L\+\_\+\+H\+O\+U\+SE s\textquotesingle{}il y en a 1, 0 sinon. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em de,int\mbox{[}\+N\+B\+\_\+\+D\+E\mbox{]},entrée} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{yams___cleo___martin-_colleu__2_80_8c_a9a910d2cb5db9b8ad5d270e9a93dcd5f}\label{yams___cleo___martin-_colleu__2_80_8c_a9a910d2cb5db9b8ad5d270e9a93dcd5f}} 
+\index{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c@{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c}!grande\+\_\+suite@{grande\+\_\+suite}}
+\index{grande\+\_\+suite@{grande\+\_\+suite}!yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c@{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c}}
+\subsubsection{\texorpdfstring{grande\+\_\+suite()}{grande\_suite()}}
+{\footnotesize\ttfamily int grande\+\_\+suite (\begin{DoxyParamCaption}\item[{int}]{de\mbox{[}\+N\+B\+\_\+\+D\+E\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+tri la liste des dés pour y rechercher une grande suite 
+
+
+\begin{DoxyParams}{Parameters}
+{\em de,int\mbox{[}\+N\+B\+\_\+\+D\+E\mbox{]},entrée/sortie} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{yams___cleo___martin-_colleu__2_80_8c_a792bcf389a25e2758894847d2feca6db}\label{yams___cleo___martin-_colleu__2_80_8c_a792bcf389a25e2758894847d2feca6db}} 
+\index{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c@{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c}!initialise@{initialise}}
+\index{initialise@{initialise}!yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c@{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c}}
+\subsubsection{\texorpdfstring{initialise()}{initialise()}}
+{\footnotesize\ttfamily void initialise (\begin{DoxyParamCaption}\item[{type\+\_\+de}]{de }\end{DoxyParamCaption})}
+
+
+
+met chaque valeur du tableau de\mbox{[}1\mbox{]} à 1, pour que par la suite, tous les déés pouissent êtres relancés 
+
+
+\begin{DoxyParams}{Parameters}
+{\em de,type\+\_\+de,sortie} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{yams___cleo___martin-_colleu__2_80_8c_a8da1d298788f0d42c2755d2aef014b6f}\label{yams___cleo___martin-_colleu__2_80_8c_a8da1d298788f0d42c2755d2aef014b6f}} 
+\index{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c@{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c}!lancer\+\_\+de@{lancer\+\_\+de}}
+\index{lancer\+\_\+de@{lancer\+\_\+de}!yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c@{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c}}
+\subsubsection{\texorpdfstring{lancer\+\_\+de()}{lancer\_de()}}
+{\footnotesize\ttfamily void lancer\+\_\+de (\begin{DoxyParamCaption}\item[{type\+\_\+de}]{de }\end{DoxyParamCaption})}
+
+
+
+modifie la valeur des dés (de\mbox{[}0\mbox{]}) si leur opposé (de\mbox{[}1\mbox{]}) = 1 
+
+
+\begin{DoxyParams}{Parameters}
+{\em de,int\mbox{[}2\mbox{]}\mbox{[}5\mbox{]},entrée/sortie} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{yams___cleo___martin-_colleu__2_80_8c_ae8b366432ca1376ab9fd71104cf988e4}\label{yams___cleo___martin-_colleu__2_80_8c_ae8b366432ca1376ab9fd71104cf988e4}} 
+\index{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c@{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c}!ligne1@{ligne1}}
+\index{ligne1@{ligne1}!yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c@{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c}}
+\subsubsection{\texorpdfstring{ligne1()}{ligne1()}}
+{\footnotesize\ttfamily void ligne1 (\begin{DoxyParamCaption}\item[{nom}]{j1,  }\item[{nom}]{j2 }\end{DoxyParamCaption})}
+
+
+
+affiche la première ligne du tableau en y entrant le nom des joueurs 
+
+
+\begin{DoxyParams}{Parameters}
+{\em j1,nom,entrée} & \\
+\hline
+{\em j2,nom,entrée} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{yams___cleo___martin-_colleu__2_80_8c_a7566741f40c636a12c1446addc70a13b}\label{yams___cleo___martin-_colleu__2_80_8c_a7566741f40c636a12c1446addc70a13b}} 
+\index{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c@{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c}!ligne\+\_\+global@{ligne\+\_\+global}}
+\index{ligne\+\_\+global@{ligne\+\_\+global}!yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c@{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c}}
+\subsubsection{\texorpdfstring{ligne\+\_\+global()}{ligne\_global()}}
+{\footnotesize\ttfamily void ligne\+\_\+global (\begin{DoxyParamCaption}\item[{char}]{chaine\mbox{[}20\mbox{]},  }\item[{int}]{nb1,  }\item[{int}]{nb2 }\end{DoxyParamCaption})}
+
+
+
+affiche la plupart des autres lignes du tableau selon les parametres donnés (texte de la case 1, score du j1, score du j2) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em chaine,char\mbox{[}20\mbox{]},entrée} & \\
+\hline
+{\em nb1,int,entrée} & \\
+\hline
+{\em nb2,int,entrée} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{yams___cleo___martin-_colleu__2_80_8c_aa40182218f7ed8b1a8c5b6ecd9072790}\label{yams___cleo___martin-_colleu__2_80_8c_aa40182218f7ed8b1a8c5b6ecd9072790}} 
+\index{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c@{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c}!ligne\+\_\+possibilitees@{ligne\+\_\+possibilitees}}
+\index{ligne\+\_\+possibilitees@{ligne\+\_\+possibilitees}!yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c@{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c}}
+\subsubsection{\texorpdfstring{ligne\+\_\+possibilitees()}{ligne\_possibilitees()}}
+{\footnotesize\ttfamily void ligne\+\_\+possibilitees (\begin{DoxyParamCaption}\item[{char}]{chaine\mbox{[}20\mbox{]},  }\item[{int}]{nb1,  }\item[{int}]{nb2,  }\item[{int}]{j\+\_\+actif }\end{DoxyParamCaption})}
+
+
+
+affiche la plupart des autres lignes du tableau selon les parametres donnés (texte de la case 1, score du j1, score du j2) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em chaine,char\mbox{[}20\mbox{]},entrée} & \\
+\hline
+{\em nb1,int,entrée} & \\
+\hline
+{\em nb2,int,entrée} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{yams___cleo___martin-_colleu__2_80_8c_a95b368ec8ea7cec19093abf65cfb438c}\label{yams___cleo___martin-_colleu__2_80_8c_a95b368ec8ea7cec19093abf65cfb438c}} 
+\index{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c@{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c}!ligne\+\_\+total@{ligne\+\_\+total}}
+\index{ligne\+\_\+total@{ligne\+\_\+total}!yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c@{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c}}
+\subsubsection{\texorpdfstring{ligne\+\_\+total()}{ligne\_total()}}
+{\footnotesize\ttfamily void ligne\+\_\+total (\begin{DoxyParamCaption}\item[{char}]{chaine\mbox{[}20\mbox{]},  }\item[{int}]{nb1,  }\item[{int}]{nb2 }\end{DoxyParamCaption})}
+
+
+
+affiche la plupart des autres lignes du tableau selon les parametres donnés (texte de la case 1, score du j1, score du j2) pour afficher les totaux, car appel case\+\_\+total\+\_\+int()) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em chaine,char\mbox{[}20\mbox{]},entrée} & \\
+\hline
+{\em nb1,int,entrée} & \\
+\hline
+{\em nb2,int,entrée} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{yams___cleo___martin-_colleu__2_80_8c_a5bbcd4c6c5a2425d5de6877bdfcf7b55}\label{yams___cleo___martin-_colleu__2_80_8c_a5bbcd4c6c5a2425d5de6877bdfcf7b55}} 
+\index{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c@{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c}!majuscule@{majuscule}}
+\index{majuscule@{majuscule}!yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c@{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c}}
+\subsubsection{\texorpdfstring{majuscule()}{majuscule()}}
+{\footnotesize\ttfamily void majuscule (\begin{DoxyParamCaption}\item[{char $\ast$}]{chaine }\end{DoxyParamCaption})}
+
+
+
+remplace les minuscules d\textquotesingle{}une chaine par des majuscules 
+
+
+\begin{DoxyParams}{Parameters}
+{\em chaine\mbox{[}$\,$\mbox{]},char,entrée} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{yams___cleo___martin-_colleu__2_80_8c_a546ce9e2b826a940aa39b86be0ed9a54}\label{yams___cleo___martin-_colleu__2_80_8c_a546ce9e2b826a940aa39b86be0ed9a54}} 
+\index{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c@{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c}!menu@{menu}}
+\index{menu@{menu}!yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c@{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c}}
+\subsubsection{\texorpdfstring{menu()}{menu()}}
+{\footnotesize\ttfamily void menu (\begin{DoxyParamCaption}\item[{type\+\_\+de}]{de,  }\item[{type\+\_\+score}]{score,  }\item[{int $\ast$}]{nb\+\_\+lancer,  }\item[{int}]{joueur\+\_\+actif,  }\item[{nom}]{nom\+\_\+joueur\+\_\+actif,  }\item[{int $\ast$}]{fin }\end{DoxyParamCaption})}
+
+
+
+affiche le menu (score des dés, chois des possibilités) selon le nombre de lancés restant et fait appel à d\textquotesingle{}autres fonction pour \+: choisir les dé, relancer les dés, valider ses points 
+
+
+\begin{DoxyParams}{Parameters}
+{\em de,int\mbox{[}2\mbox{]}\mbox{[}5\mbox{]},entrée/sortie} & \\
+\hline
+{\em score,int\mbox{[}2\mbox{]}\mbox{[}17\mbox{]},entrée/sortie} & \\
+\hline
+{\em nb\+\_\+lancer,int,entrée/sortie} & \\
+\hline
+{\em joueur\+\_\+actif,int,entrée} & \\
+\hline
+{\em nom\+\_\+joueur\+\_\+actif,int,entrée} & \\
+\hline
+{\em fin,int,entrée/sortie} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{yams___cleo___martin-_colleu__2_80_8c_a7a5a0a035a8765dfa6098b342b6dfc78}\label{yams___cleo___martin-_colleu__2_80_8c_a7a5a0a035a8765dfa6098b342b6dfc78}} 
+\index{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c@{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c}!petite\+\_\+suite@{petite\+\_\+suite}}
+\index{petite\+\_\+suite@{petite\+\_\+suite}!yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c@{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c}}
+\subsubsection{\texorpdfstring{petite\+\_\+suite()}{petite\_suite()}}
+{\footnotesize\ttfamily int petite\+\_\+suite (\begin{DoxyParamCaption}\item[{int}]{de\mbox{[}\+N\+B\+\_\+\+D\+E\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+tri la liste des dés pour y rechercher une petite suite 
+
+
+\begin{DoxyParams}{Parameters}
+{\em de,int\mbox{[}\+N\+B\+\_\+\+D\+E\mbox{]},entrée/sortie} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{yams___cleo___martin-_colleu__2_80_8c_a1d1c5c29ca6650e0c9995d76c80a1cb5}\label{yams___cleo___martin-_colleu__2_80_8c_a1d1c5c29ca6650e0c9995d76c80a1cb5}} 
+\index{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c@{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c}!tableau@{tableau}}
+\index{tableau@{tableau}!yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c@{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c}}
+\subsubsection{\texorpdfstring{tableau()}{tableau()}}
+{\footnotesize\ttfamily void tableau (\begin{DoxyParamCaption}\item[{type\+\_\+score}]{score,  }\item[{nom}]{j1,  }\item[{nom}]{j2,  }\item[{int}]{j\+\_\+actif,  }\item[{type\+\_\+score}]{possibilitees }\end{DoxyParamCaption})}
+
+
+
+affiche le tableau des scores 
+
+
+\begin{DoxyParams}{Parameters}
+{\em score,int,entrée} & \\
+\hline
+{\em j1,char\mbox{[}10\mbox{]},entrée} & \\
+\hline
+{\em j2,char\mbox{[}10\mbox{]},entrée} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{yams___cleo___martin-_colleu__2_80_8c_a438a5164d4aac732138ced5899be0379}\label{yams___cleo___martin-_colleu__2_80_8c_a438a5164d4aac732138ced5899be0379}} 
+\index{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c@{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c}!total\+\_\+nombre@{total\+\_\+nombre}}
+\index{total\+\_\+nombre@{total\+\_\+nombre}!yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c@{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c}}
+\subsubsection{\texorpdfstring{total\+\_\+nombre()}{total\_nombre()}}
+{\footnotesize\ttfamily int total\+\_\+nombre (\begin{DoxyParamCaption}\item[{int}]{de\mbox{[}\+N\+B\+\_\+\+D\+E\mbox{]},  }\item[{int}]{nombre }\end{DoxyParamCaption})}
+
+
+
+(pas fini) recherche le nombre de repetiontion d\textquotesingle{}un nombre donné dans une liste et retourne (nombre de repetition du nombre)$\ast$(le nombre) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em de,int\mbox{[}\+N\+B\+\_\+\+D\+E\mbox{]},entrée} & \\
+\hline
+{\em nombre,int,entrée} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{yams___cleo___martin-_colleu__2_80_8c_a187b6be1bce27cb32c9a632b7411394a}\label{yams___cleo___martin-_colleu__2_80_8c_a187b6be1bce27cb32c9a632b7411394a}} 
+\index{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c@{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c}!tri@{tri}}
+\index{tri@{tri}!yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c@{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c}}
+\subsubsection{\texorpdfstring{tri()}{tri()}}
+{\footnotesize\ttfamily void tri (\begin{DoxyParamCaption}\item[{int}]{res\mbox{[}\+N\+B\+\_\+\+D\+E\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+tri la liste par ordre croissant 
+
+
+\begin{DoxyParams}{Parameters}
+{\em res,int,entrée/sortie} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{yams___cleo___martin-_colleu__2_80_8c_ae2a93c2991c556e62762ba0d81d483f0}\label{yams___cleo___martin-_colleu__2_80_8c_ae2a93c2991c556e62762ba0d81d483f0}} 
+\index{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c@{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c}!valider\+\_\+points@{valider\+\_\+points}}
+\index{valider\+\_\+points@{valider\+\_\+points}!yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c@{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c}}
+\subsubsection{\texorpdfstring{valider\+\_\+points()}{valider\_points()}}
+{\footnotesize\ttfamily void valider\+\_\+points (\begin{DoxyParamCaption}\item[{int}]{de\mbox{[}\+N\+B\+\_\+\+D\+E\mbox{]},  }\item[{int}]{score\mbox{[}\+N\+B\+\_\+\+C\+A\+S\+E\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+permet de verifier l\textquotesingle{}entrée de l\textquotesingle{}utilisateur 
+
+
+\begin{DoxyParams}{Parameters}
+{\em de} & \\
+\hline
+{\em score} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{yams___cleo___martin-_colleu__2_80_8c_a1229fccbb203e81f1130f89c0a68683f}\label{yams___cleo___martin-_colleu__2_80_8c_a1229fccbb203e81f1130f89c0a68683f}} 
+\index{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c@{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c}!verif\+\_\+nom@{verif\+\_\+nom}}
+\index{verif\+\_\+nom@{verif\+\_\+nom}!yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c@{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c}}
+\subsubsection{\texorpdfstring{verif\+\_\+nom()}{verif\_nom()}}
+{\footnotesize\ttfamily void verif\+\_\+nom (\begin{DoxyParamCaption}\item[{nom}]{joueur,  }\item[{int}]{j }\end{DoxyParamCaption})}
+
+
+
+permet de rentrer et de verifier une chaine de caractère pour qu\textquotesingle{}elle fasse au maximum 10 caractere, et que chaque caractère appartient à la table A\+S\+C\+II. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em joueur} & \\
+\hline
+{\em j} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{yams___cleo___martin-_colleu__2_80_8c_ab9d432a650d9fe11c52fdac9aeb8847e}\label{yams___cleo___martin-_colleu__2_80_8c_ab9d432a650d9fe11c52fdac9aeb8847e}} 
+\index{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c@{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c}!yams@{yams}}
+\index{yams@{yams}!yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c@{yams\+\_\+\+Cleo\+\_\+\+Martin-\/\+Colleu\+\_\+2.\+0.\+c}}
+\subsubsection{\texorpdfstring{yams()}{yams()}}
+{\footnotesize\ttfamily int yams (\begin{DoxyParamCaption}\item[{int}]{de\mbox{[}\+N\+B\+\_\+\+D\+E\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+recherche la présence d\textquotesingle{}un yams (5 dés identiques) dans la liste des dés 
+
+
+\begin{DoxyParams}{Parameters}
+{\em de,int\mbox{[}\+N\+B\+\_\+\+D\+E\mbox{]},entrée} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
